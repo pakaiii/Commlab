@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-color: bisque;
+
+}
+
+.box{
+    outline: 1px dashed black;
+    width: 200px;
+    padding: 30px;
+}
+
+.box p{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.one{
+    position: relative;
+    left: 10px;
+    /* pixels from the left */
+    top: 20px;
+    /* moves them in relation to their natural relation */
+    /* moves the first box */
+}
+
+.one span{
+    position: relative;
+    left: 2px;
+    top: -3px;
+   /* moves in relation to the top/left */
+}
+
+.two{
+    position: absolute;
+    left: 500px;
+    top: 300px;
+    /* con of position absolute is that is does not resize with the screen */
+}
+
+.three{
+    position: fixed;
+    left: 300px;
+    top: 0px;
+    /* difference between absolute and fixed is positioned in realtion to your screen and absolute is relation to the page */
+    /* fixed can be used for banners, eg NY times */
+}
+
+.six{
+    height: 2000px;
+}
+
+.five{
+    position: sticky;
+    top: 0px;
+    left: 100px;
+    /* be where you would be naturally, but stays fixed to the side of the screen, eg when you scroll it sticks to the top of the screen */
+}
+
+.seven{
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    height: 50vh;
+    position: relative;
+    /* the position relative allows for sevens child to position itself in the corner of seven box */
+}
+
+.sevensChild{
+    outline: green 1px dotted;
+    width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.sevensChild p{
+    background-color: black;
+    color: greenyellow;
+    margin: 0;
+}

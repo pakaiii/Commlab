@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+p{
+    color:darksalmon;
+    background-color: brown;
+    text-transform: uppercase;
+    /* learning how to comment */
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: right;
+    letter-spacing: 10px;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+div{
+    border-width: 5px;
+    border-color: cadetblue;
+    border-style:double;
+    /* below is another way to write the above, in the below there is no order needed, just list them all off */
+    border:  5px cadetblue double;
+    width: 200px;
+    margin: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    /* marigin and padding "push" the boxes the #px amount away */
+
+}
+
+
+div p{ 
+    background-color:darkcyan;
+}
+
+span{
+    text-decoration: underline;
+}
+
+.highlight1{ 
+    color: blueviolet;
+}
+
+.highlight2{
+    color: darkslateblue;
+}
+
+#specialparagraph{
+    border: brown;
+}
+

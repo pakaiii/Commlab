@@ -1,0 +1,23 @@
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    display: inline-block;
+    flex-wrap:wrap;
+    flex-direction: column;
+    outline: dotted blue;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.item{
+    outline: red dotted;
+}
+
+.second{
+    height: 100px;
+}
+
+/* overflow:scroll in style.css is good for scrolling sideays */

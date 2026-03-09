@@ -1,0 +1,33 @@
+body{
+    background-color: beige;
+}
+
+.container{
+    display: flex; 
+    flex-wrap:wrap;
+    /* makes the words wrap onto the next line when there isnt space there anymore */
+    /* flex-direction: column-reverse; */
+    /* if you use column-reverse rather than "column" then 8 will be at the top and 1 will be at the bottom*/
+    outline: blue dotted;
+
+    justify-content: space-between;
+    /* "flex-end" moves the words to the right side, "flex-start" is the default and positions words to the left */
+    /* "space-between" makes the elements use the full space, good for headers */
+
+    align-items: center;
+    /* center aligns items on the center */
+
+
+}
+
+.item{
+    width: 200px;
+    outline: 1px red dotted;
+}
+
+.second{ 
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
