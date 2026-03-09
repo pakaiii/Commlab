@@ -30,5 +30,5 @@ A true story O.o
 A tutorial not made for humans...but rather computers
 
 ![IAM](image-3.png)
-![alt text](image-4.png) 
-![alt text](image-5.png)
+![Iwastrapped](image-4.png) 
+![butterfly](image-5.png)
