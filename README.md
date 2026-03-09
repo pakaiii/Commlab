@@ -23,10 +23,12 @@ A journey that explores what lies beneath a city!
 
 A true story O.o
 
-![alt text](image-2.png))
+![alt text](image-2.png)
 
 # Tutorial
 
 A tutorial not made for humans...but rather computers
 
-![ ](image-3.png)
+![IAM](image-3.png)
+![alt text](image-4.png) 
+![alt text](image-5.png)
