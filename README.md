@@ -1,7 +1,7 @@
 # PaKai's commlab page
 ## Helloooooo 
 
-The live link is: [https//:pakaiii.github.io/Commlab]([https//:pakaiii.github.io/Commlab)
+The live link is: [https//:pakaiii.github.io/Commlab]([https：//pakaiii.github.io/Commlab)
 
 I made them all this year at NYUSH spring 2026.
 - Journey through the sheets
@@ -32,3 +32,4 @@ A tutorial not made for humans...but rather computers
 ![IAM](image-3.png)
 ![Iwastrapped](image-4.png) 
 ![butterfly](image-5.png)
+
