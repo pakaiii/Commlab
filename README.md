@@ -1,7 +1,7 @@
 # PaKai's commlab page
 ## Helloooooo 
 
-The live link is: [https//:pakaiii.github.io/Commlab]([https：//pakaiii.github.io/Commlab)
+The live link is: [https//:pakaiii.github.io/Commlab]([https://pakaiii.github.io/Commlab)
 
 I made them all this year at NYUSH spring 2026.
 - Journey through the sheets
