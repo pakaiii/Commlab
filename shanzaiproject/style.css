@@ -492,7 +492,7 @@ main{
 
 /* cmbyn html */
 
-#bodyhowl{
+#bodycmbyn{
     height: 620px;
     margin: 0
 }
@@ -515,7 +515,7 @@ main{
     border: none;
 }
 
-.lefthowl{
+.leftcmbyn{
     width: 600px;
     float: left;
     display: flex;
@@ -528,7 +528,7 @@ main{
 
 }
 
-.containerhowl{
+.containercmbyn{
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(255, 248, 245, 0.911);
@@ -542,7 +542,7 @@ main{
     justify-content: space-between;
 }
 
-.middlehowl{
+.middlecmbyn{
     width: 520px;
     float: left;
     height: 620px;
@@ -557,12 +557,12 @@ main{
     
 }
 
-.bookimagehowl{
+.bookimagecmbyn{
     display:flex
 
 }
 
-.booktitlehowl{
+.booktitlecmbyn{
     font-size: 40px;
     font-family:'Times New Roman', Times, serif;
     position: revert;
@@ -574,11 +574,11 @@ main{
 
 }
 
-#actionhowl{
+#actioncmbyn{
     margin-left: 150px;
 }
 
-#howlquote{
+#cmbynquote{
     margin-left: 5px;
 }
 
