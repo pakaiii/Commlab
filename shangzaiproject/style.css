@@ -2,7 +2,7 @@ body{
     margin: 0;
     width: 1280px;
     height: 1400px;
-    background-color: rgba(255, 248, 245, 0.973);
+    background-color: rgb(255, 248, 245);
 
     
 }
@@ -14,8 +14,8 @@ p{
 .container{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(255, 248, 245, 0.973);
-    color: black;
+    background-color: rgb(255, 248, 245);
+    /* color: black; */
     width: 1280px;
     height: 50px;
     font-size: 30px;
@@ -29,7 +29,7 @@ p{
 .header{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(255, 248, 245, 0.897);
+    background-color: rgb(255, 248, 245);
     color: black;
     width: 1280px;
     height: 50px;
@@ -124,27 +124,16 @@ main{
 }
 
 .booktitle{
-    font-size: 19px;
+    font-size: 17px;
     font-family:'Times New Roman', Times, serif;
-    position: relative;
+    position: revert;
     margin-left: 12px;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     /* border: red dotted 1px; */
     height: 30px;
+
 }
-
-/* .author{
-    font-size: 15px;
-    font-family:Arial, Helvetica, sans-serif;
-    position: relative;
-    display: flex;
-    float:left;
-    margin-top: 35px;
-    border: red dotted 1px;
-    height: 30px;
-
-} */
 
 .rightfooter{
     background-color:rgb(239, 239, 239);
@@ -181,4 +170,506 @@ main{
     display: flex;
     align-items: center;
     
+}
+
+/* below is for films */
+
+#goodreadsbutton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+#button{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+.containerfilm{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 248, 245, 0.911);
+    color: black;
+    width: 1280px;
+    height: 50px;
+    font-size: 30px;
+    position:relative;
+    border-bottom: 1px grey solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middlefilm{
+    width: 500px;
+    float: left;
+    height: 1400px;
+    margin-right: 20px;
+    margin-top: 12px;
+    outline: dotted grey 1px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#action{
+    margin-left: 250px;
+}
+
+.reviewfilm{
+    background-color: white;
+    border: rgb(219, 219, 219) 2px solid;
+    width: 400px;
+    height: 250px;
+    margin-left: 50px;
+    font-size: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+/* below is for myfilm */
+
+#goodreadsbutton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+#button{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+.containermyfilm{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 248, 245);
+    /* color: black; */
+    width: 1280px;
+    height: 50px;
+    font-size: 30px;
+    position:relative;
+    border-bottom: 1px grey solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#myfilmlabel{
+    margin-top: 53px;
+}
+
+.leftmyfilm{
+    width: 400px;
+    /* float: left; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    /* outline: dotted red 1px; */
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.middlemyfilm{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  rgb(255, 248, 245);
+    /* position:relative; */
+    display:flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 12px;
+    
+}
+
+.rightmyfilm{
+    /* outline: dotted red 1px; */
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookimagemyfilmleft{
+    display:flex
+    
+}
+
+/* Gatsby html */
+
+#bodygatsby{
+    height: 620px;
+    margin: 0
+}
+
+#goodreadsbutton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+#button{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+.leftgatsby{
+    width: 600px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 70px;
+    /* outline: dotted red 1px; */
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-start;
+
+}
+
+.containergatsby{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 248, 245, 0.911);
+    color: black;
+    width: 1280px;
+    height: 50px;
+    font-size: 30px;
+    position:relative;
+    border-bottom: 1px grey solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middlegatsby{
+    width: 520px;
+    float: left;
+    height: 620px;
+    margin-top: 12px;
+    outline: dotted grey 1px;
+    margin-left: 115px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+    justify-content:right
+    
+}
+
+.bookimagegatsby{
+    display:flex
+
+}
+
+.booktitlegatsby{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    position: revert;
+    margin-left: 12px;
+    display: block;
+    flex-wrap: wrap;
+    /* border: red dotted 1px; */
+    height: 30px;
+
+}
+
+#actiongatsby{
+    margin-left: 150px;
+}
+
+/* Betterdays html */
+
+#bodybd{
+    height: 620px;
+    margin: 0
+}
+
+#goodreadsbutton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+#button{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+.leftbd{
+    width: 600px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 70px;
+    /* outline: dotted red 1px; */
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-start;
+
+}
+
+.containerbd{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 248, 245, 0.911);
+    color: black;
+    width: 1280px;
+    height: 50px;
+    font-size: 30px;
+    position:relative;
+    border-bottom: 1px grey solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middlebd{
+    width: 520px;
+    float: left;
+    height: 620px;
+    margin-top: 12px;
+    outline: dotted grey 1px;
+    margin-left: 115px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+    justify-content:right
+    
+}
+
+.bookimagebd{
+    display:flex
+
+}
+
+.booktitlebd{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    position: revert;
+    margin-left: 12px;
+    display: block;
+    flex-wrap: wrap;
+    /* border: red dotted 1px; */
+    height: 30px;
+
+}
+
+#actionbd{
+    margin-left: 150px;
+}
+
+#bdquote{
+    margin-left: 5px;
+}
+
+/* cmbyn html */
+
+#bodyhowl{
+    height: 620px;
+    margin: 0
+}
+
+#goodreadsbutton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+#button{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+.lefthowl{
+    width: 600px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 70px;
+    /* outline: dotted red 1px; */
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-start;
+
+}
+
+.containerhowl{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 248, 245, 0.911);
+    color: black;
+    width: 1280px;
+    height: 50px;
+    font-size: 30px;
+    position:relative;
+    border-bottom: 1px grey solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middlehowl{
+    width: 520px;
+    float: left;
+    height: 620px;
+    margin-top: 12px;
+    outline: dotted grey 1px;
+    margin-left: 115px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+    justify-content:right
+    
+}
+
+.bookimagehowl{
+    display:flex
+
+}
+
+.booktitlehowl{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    position: revert;
+    margin-left: 12px;
+    display: block;
+    flex-wrap: wrap;
+    /* border: red dotted 1px; */
+    height: 30px;
+
+}
+
+#actionhowl{
+    margin-left: 150px;
+}
+
+#howlquote{
+    margin-left: 5px;
+}
+
+/* howls moving castle html */
+
+#bodyhowl{
+    height: 620px;
+    margin: 0
+}
+
+#goodreadsbutton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+#button{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(255, 248, 245);
+    border-color: rgb(255, 248, 245);
+    padding: 6px;
+    border: none;
+}
+
+.lefthowl{
+    width: 600px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 70px;
+    /* outline: dotted red 1px; */
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-start;
+
+}
+
+.containerhowl{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 248, 245, 0.911);
+    color: black;
+    width: 1280px;
+    height: 50px;
+    font-size: 30px;
+    position:relative;
+    border-bottom: 1px grey solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middlehowl{
+    width: 520px;
+    float: left;
+    height: 620px;
+    margin-top: 12px;
+    outline: dotted grey 1px;
+    margin-left: 115px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+    justify-content:right
+    
+}
+
+.bookimagehowl{
+    display:flex
+
+}
+
+.booktitlehowl{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    position: revert;
+    margin-left: 12px;
+    display: block;
+    flex-wrap: wrap;
+    /* border: red dotted 1px; */
+    height: 30px;
+
+}
+
+#actionhowl{
+    margin-left: 150px;
+}
+
+#howlquote{
+    margin-left: 5px;
 }
