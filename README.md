@@ -7,7 +7,7 @@ I made them all this year at NYUSH spring 2026.
 - Journey through the sheets
 - [Lifescroll](lifescroll)
 - [Tutorial on the web](tutorial)
-- Shangzai Project [here!](shangzaiproject)
+- Shanzai Project [here!](shanzaiproject)
 
 These are some practice and references to look back on:
 - flexbox [practice](flexbox)
