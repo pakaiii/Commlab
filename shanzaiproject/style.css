@@ -38,6 +38,7 @@ p{
     border-bottom: 1px grey solid;
     align-items: center;
     justify-content: space-between;
+      z-index: 1000;
 
 }
 
@@ -119,14 +120,36 @@ main{
 }
 
 .bookimage{
-    display:flex
+    display:flex;
+    position: relative;
 
+}
+
+.hoverbook{
+    position: relative;
+    display: inline-block;
+}
+
+.hoverbook img{
+    display:block;
+}
+
+.hoverimg{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition: opacity 0.3s ease;
+}
+
+.hoverbook:hover .hoverimg{
+    opacity:1;
 }
 
 .booktitle{
     font-size: 17px;
     font-family:'Times New Roman', Times, serif;
-    position: revert;
+    position:revert;
     margin-left: 12px;
     display: block;
     flex-wrap: wrap;
@@ -140,6 +163,25 @@ main{
     font-size: 15px;
     height: 500px;
     color: black;
+    display: flex;
+    /* flex-direction: column; */
+    
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .review{
@@ -310,32 +352,14 @@ main{
     
 }
 
-/* Gatsby html */
+/* movie html */
 
-#bodygatsby{
-    height: 620px;
+#bodymovie{
+    max-height: 620px;
     margin: 0
 }
 
-#goodreadsbutton {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    background-color:rgb(255, 248, 245);
-    border-color: rgb(255, 248, 245);
-    padding: 6px;
-    border: none;
-}
-
-#button{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color:rgb(255, 248, 245);
-    border-color: rgb(255, 248, 245);
-    padding: 6px;
-    border: none;
-}
-
-.leftgatsby{
+.leftmovie{
     width: 600px;
     float: left;
     display: flex;
@@ -348,7 +372,7 @@ main{
 
 }
 
-.containergatsby{
+.containermovie{
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(255, 248, 245, 0.911);
@@ -360,9 +384,10 @@ main{
     border-bottom: 1px grey solid;
     align-items: center;
     justify-content: space-between;
+
 }
 
-.middlegatsby{
+.middlemovie{
     width: 520px;
     float: left;
     height: 620px;
@@ -377,12 +402,12 @@ main{
     
 }
 
-.bookimagegatsby{
+.bookimagemovie{
     display:flex
 
 }
 
-.booktitlegatsby{
+.booktitlemovie{
     font-size: 40px;
     font-family:'Times New Roman', Times, serif;
     position: revert;
@@ -394,282 +419,46 @@ main{
 
 }
 
-#actiongatsby{
+#actionmovie{
     margin-left: 150px;
 }
 
-/* Betterdays html */
 
-#bodybd{
-    height: 620px;
-    margin: 0
-}
-
-#goodreadsbutton {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    background-color:rgb(255, 248, 245);
-    border-color: rgb(255, 248, 245);
-    padding: 6px;
-    border: none;
-}
-
-#button{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color:rgb(255, 248, 245);
-    border-color: rgb(255, 248, 245);
-    padding: 6px;
-    border: none;
-}
-
-.leftbd{
-    width: 600px;
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10px;
-    margin-top: 70px;
-    /* outline: dotted red 1px; */
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: flex-start;
-
-}
-
-.containerbd{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(255, 248, 245, 0.911);
-    color: black;
-    width: 1280px;
-    height: 50px;
-    font-size: 30px;
-    position:relative;
-    border-bottom: 1px grey solid;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.middlebd{
-    width: 520px;
-    float: left;
-    height: 620px;
-    margin-top: 12px;
-    outline: dotted grey 1px;
-    margin-left: 115px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    overflow: hidden;
-    overflow-y: scroll;
-    justify-content:right
-    
-}
-
-.bookimagebd{
-    display:flex
-
-}
-
-.booktitlebd{
-    font-size: 40px;
-    font-family:'Times New Roman', Times, serif;
-    position: revert;
-    margin-left: 12px;
-    display: block;
-    flex-wrap: wrap;
-    /* border: red dotted 1px; */
-    height: 30px;
-
-}
-
-#actionbd{
-    margin-left: 150px;
-}
-
-#bdquote{
+#moviequote{
     margin-left: 5px;
 }
 
-/* cmbyn html */
 
-#bodycmbyn{
-    height: 620px;
-    margin: 0
+.starrating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  font-size: 70px;
+  cursor: pointer;
+  margin-top: 0px;
+
 }
 
-#goodreadsbutton {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    background-color:rgb(255, 248, 245);
-    border-color: rgb(255, 248, 245);
-    padding: 6px;
-    border: none;
+.star {
+  color: lightgray;
+  transition: color 0.2s;
 }
 
-#button{
+.star:hover,
+.star:hover ~ .star {
+  color: gold;
+}
+
+.reviewmovie{
+    background-color: rgb(211, 211, 211);
+    padding: 5px;
+    width: 900px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.movrev{
+    background-color: white;
+    padding: 20px;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color:rgb(255, 248, 245);
-    border-color: rgb(255, 248, 245);
-    padding: 6px;
-    border: none;
-}
-
-.leftcmbyn{
-    width: 600px;
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10px;
-    margin-top: 70px;
-    /* outline: dotted red 1px; */
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: flex-start;
-
-}
-
-.containercmbyn{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(255, 248, 245, 0.911);
-    color: black;
-    width: 1280px;
-    height: 50px;
-    font-size: 30px;
-    position:relative;
-    border-bottom: 1px grey solid;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.middlecmbyn{
-    width: 520px;
-    float: left;
-    height: 620px;
-    margin-top: 12px;
-    outline: dotted grey 1px;
-    margin-left: 115px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    overflow: hidden;
-    overflow-y: scroll;
-    justify-content:right
-    
-}
-
-.bookimagecmbyn{
-    display:flex
-
-}
-
-.booktitlecmbyn{
-    font-size: 40px;
-    font-family:'Times New Roman', Times, serif;
-    position: revert;
-    margin-left: 12px;
-    display: block;
-    flex-wrap: wrap;
-    /* border: red dotted 1px; */
-    height: 30px;
-
-}
-
-#actioncmbyn{
-    margin-left: 150px;
-}
-
-#cmbynquote{
-    margin-left: 5px;
-}
-
-/* howls moving castle html */
-
-#bodyhowl{
-    height: 620px;
-    margin: 0
-}
-
-#goodreadsbutton {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    background-color:rgb(255, 248, 245);
-    border-color: rgb(255, 248, 245);
-    padding: 6px;
-    border: none;
-}
-
-#button{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color:rgb(255, 248, 245);
-    border-color: rgb(255, 248, 245);
-    padding: 6px;
-    border: none;
-}
-
-.lefthowl{
-    width: 600px;
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10px;
-    margin-top: 70px;
-    /* outline: dotted red 1px; */
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: flex-start;
-
-}
-
-.containerhowl{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(255, 248, 245, 0.911);
-    color: black;
-    width: 1280px;
-    height: 50px;
-    font-size: 30px;
-    position:relative;
-    border-bottom: 1px grey solid;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.middlehowl{
-    width: 520px;
-    float: left;
-    height: 620px;
-    margin-top: 12px;
-    outline: dotted grey 1px;
-    margin-left: 115px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    overflow: hidden;
-    overflow-y: scroll;
-    justify-content:right
-    
-}
-
-.bookimagehowl{
-    display:flex
-
-}
-
-.booktitlehowl{
-    font-size: 40px;
-    font-family:'Times New Roman', Times, serif;
-    position: revert;
-    margin-left: 12px;
-    display: block;
-    flex-wrap: wrap;
-    /* border: red dotted 1px; */
-    height: 30px;
-
-}
-
-#actionhowl{
-    margin-left: 150px;
-}
-
-#howlquote{
-    margin-left: 5px;
 }
