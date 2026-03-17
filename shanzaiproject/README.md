@@ -22,7 +22,7 @@ When you finish a good book, it remains on your mind and people often search for
 ![goodreadfilmshomepage](images/image.png)
 The homepage of Goodreadfilms features a "currently watching" left column and "recommendations" right column, each containing multiple film adaptations of popular novels. The center is a scrollable column formatted to resemble to a film strip that display different scenes of film adaptations in the form of gifs.
 
-![MyFilmpage]](images/image2.png)
+![MyFilmpage](images/image2.png)
 Users can use the header to navigate to the "My films" tab, which takes them to a library of film adaptations.
 
 ![Moviepage](images/image3.png)
