@@ -1,0 +1,120 @@
+body{
+    margin: 20px;
+    background-color:cadetblue;
+}
+
+#lorem{
+    background-color:darksalmon;
+    color:darkslategray;
+    transition: background-color 3s linear;
+    animation: fly 5s;
+
+}
+
+
+#lorem:hover{
+    background-color: darkseagreen;
+    animation: scatter 1s forwards;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes scatter {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+        color: darkslategray;
+    }
+
+    50% {
+        transform: translateY(40px) rotate(10deg);
+        color: saddlebrown;
+        opacity: .75;
+    }
+
+    100% {
+        transform: translateY(120px) rotate(-20deg);
+        opacity: 0;
+    }
+}
+
+span{
+    display: inline-block;
+    transition: transform 1s linear;
+}
+/* above is an easier format to transition the span tags, instead of copying and pasting in every lorem span tag */
+
+#lorem:hover span:nth-child(1){
+    transform: translate(0px,100px);
+    color: saddlebrown;
+
+}
+
+#lorem:hover span:nth-child(2){
+    display: inline-block;
+    transform: translate(0px,400px);
+    color: saddlebrown;
+
+}
+
+#lorem:hover span:nth-child(3){
+    display: inline-block;
+    transform: translate(0px, 200px);
+    color: saddlebrown;
+   
+}
+
+#lorem:hover span:nth-child(4){
+    display: inline-block;
+    transform: translate(0px, 150px);
+    color: saddlebrown;
+    
+    
+}
+
+#lorem:hover span:nth-child(5){
+    display: inline-block;
+    transform: translate(0px, 250px);
+    color: saddlebrown;
+   
+}
+
+#lorem:hover span:nth-child(6){
+    display: inline-block;
+    transform: translate(0px, 500px);
+    color: saddlebrown;
+    
+}
+
+#lorem:hover span:nth-child(7){
+    display: inline-block;
+    transform: translate(0px, 300px);
+    color: saddlebrown;
+    
+    
+}
+
+#lorem:hover span:nth-child(8){
+    display: inline-block;
+    transform: translate(0px, 550px);
+    color: saddlebrown;
+    
+}

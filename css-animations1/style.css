@@ -1,0 +1,125 @@
+body{
+   background-color:aquamarine; 
+   margin: 10px;
+}
+
+#loremparagraph{
+    transform: rotate(6deg);
+    transition: background-color 2s linear;
+    /* makes the background color transition in certain amount of time */
+}
+
+#loremparagraph:hover{
+    background-color:rgb(105, 68, 43);
+    color: white;
+}
+
+
+/* #specialo{
+    display: inline-block;
+    transform: translate(10px, 40px);
+} */
+
+/* img{
+    transform: skew(40deg) scale(0.6); 
+} */
+
+.spacer{
+    width: 100%;
+    height: 100px;
+}
+
+#hello{
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#hello span{ 
+    transition: transform 1s ease-out;
+    display: inline-block;
+    transform: translate(0px, 0px);
+}
+
+/* #hello:hover span:nth-child(1){
+    display: inline-block;
+    transform: translate(10px, 40px);
+}
+
+#hello:hover span:nth-child(2){
+    display: inline-block;
+    transform: translate(20px, -40px);
+}
+
+#hello:hover span:nth-child(3){
+    display: inline-block;
+    transform: translate(-20px, -20px);
+}
+
+#hello:hover span:nth-child(4){
+    display: inline-block;
+    transform: translate(50px, 3px);
+}
+
+#hello:hover span:nth-child(5){
+    display: inline-block;
+    transform: translate(30px, -10px);
+} */
+
+#hello:hover span:nth-child(odd){
+    display: inline-block;
+    transform: translate(0px, -10px) rotate(180deg);
+}
+
+#hello:hover span:nth-child(even){
+    display: inline-block;
+    transform: translate(0px, 10px) rotate(-180deg);
+}
+
+div:nth-child(even){
+    background-color:chocolate;
+
+}
+
+div:nth-child(odd){
+    background-color:darksalmon;
+}
+
+@keyframes mySkewing{
+    from{
+        transform: skew(0deg, 0deg) scale(1);
+    }
+    to{
+        transform: skew(20deg, 30deg)scale(.5);
+    }
+}
+
+img{
+    animation: mySkewing 2s alternate infinite;
+    /* could use infinite, or "forwards" which means it will remain in the last skewed state, "alternate" makes it skew and then unskew itself rather than jumping back to origin. pos. */
+}
+
+@keyframes fly{
+    0%{
+        transform:translate(0px,0px);
+        color: black; 
+        font-size: 3px;
+    }
+    50%{
+        transform: translate(100px,-40px);
+        color: white;
+        font-size: 40px;
+    }
+    100%{
+        transform: translate(0px, 0px);
+        color: black;
+        font-size: 20px
+    }
+
+}
+
+#bird{
+    transform: translate(0px, 0px);
+    animation: fly 5s infinite;
+    color: black;
+}
+
