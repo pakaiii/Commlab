@@ -29,3 +29,7 @@ Users can use the header to navigate to the "My films" tab, which takes them to 
 
 ![Moviepage](images/image3.png)
 Clicking a movie leads to a subpage that allows user to rate the movie by hovering over the stars and displays another scrollable film strip on the right that functions fimilar to a movie trailer. <br>
+
+<br>
+
+
