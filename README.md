@@ -12,7 +12,8 @@ I made them all this year at NYUSH spring 2026.
 These are some practice and references to look back on:
 - flexbox [practice](flexbox)
 - webboxes [practice](webboxes)
-- Lorem animation [practice](css-animationpractice)
+- [clock] assignment (clock)
+
 
 # Journey through the sheets
 A journey that explores what lies beneath a city!
@@ -32,4 +33,5 @@ A tutorial not made for humans...but rather computers
 ![IAM](image-3.png)
 ![Iwastrapped](image-4.png) 
 ![butterfly](image-5.png)
+
 
