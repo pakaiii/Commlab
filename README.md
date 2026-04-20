@@ -12,7 +12,7 @@ I made them all this year at NYUSH spring 2026.
 These are some practice and references to look back on:
 - flexbox [practice](flexbox)
 - webboxes [practice](webboxes)
-- [clock] assignment (clock)
+- [clock](clock) assignment 
 
 
 # Journey through the sheets
