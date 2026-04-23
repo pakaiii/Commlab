@@ -8,6 +8,7 @@ I made them all this year at NYUSH spring 2026.
 - [Lifescroll](lifescroll)
 - [Tutorial on the web](tutorial)
 - Shanzhai Project [here!](shanzaiproject)
+- Final in progress [here](narrativefinal)
 
 These are some practice and references to look back on:
 - flexbox [practice](flexbox)
