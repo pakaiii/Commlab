@@ -14,9 +14,10 @@ window.addEventListener("scroll", function(){
 
     letters.forEach((letter, index) => {
         if (index < lettersToFill) {
-            letter.style.color = "orange";
+            letter.style.opacity = "1";
+            letter.style.color = "orange"
         } else {
-            letter.style.color = "black";
+            letter.style.opacity = "0";
         }
     });
 });
