@@ -10,6 +10,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family:cursive;
+    z-index: 100;
 }
 
 #title span {
@@ -17,6 +18,7 @@ h1 {
     transition: color 0.1s linear; */
     opacity: 0;
     transition: opacity 0.3s ease;
+    
 }
 
 .container{
@@ -36,41 +38,181 @@ h1 {
 .window{
     height: 100vh;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     border: white 10px ;
     border-style: solid;
     position: relative;
     
 }
 
+#building2{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  display: block;
+}
+
 #intromonologue{
    color:white ;
+   background-color: black;
    position: absolute;
    top: 50%;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    
 }
 
-.treeimg{
-    width: 100%;
-    height: auto;
-    display: block;
-    /* object-fit: cover;
-    object-position: top; */
-}
 
 .thebubbleimg{
     width: 100%;
+    transition: transform 0.3s ease;
 }
 
-.building1{
-    width: 100%;
-    height: 100%;
+.thebubbleimg:hover{
+    transform: scale(1.1);
 }
+
 
 .window img {
   position: static;
   width: 100%;
   height: auto;
   display: block;
+}
+
+.city {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centers images */
+  pointer-events: none;
+  z-index: 10;
+}
+
+#layer1{
+   position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 50%;
+  transform: translateX(-50%) skewX(20deg) scaleY(0.2);
+  transform-origin: bottom center;
+  opacity: 0;
+}
+
+#layer2{
+   position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  transform: translateX(-50%) skewX(20deg) scaleY(0.2);
+  transform-origin: bottom center;
+  opacity: 0;
+}
+
+#layer3{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@keyframes riseUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) skewX(20deg) scaleY(0.2);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) skewX(-5deg) scaleY(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) skewX(0deg) scaleY(1);
+  }
+}
+
+.show {
+  animation: riseUp 0.8s ease forwards;
+}
+
+.rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  overflow: hidden;
+}
+
+/* raindrops */
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(transparent, rgba(255,255,255,0.6));
+  animation: rainFall linear infinite;
+}
+
+@keyframes rainFall {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120vh);
+    opacity: 0;
+  }
+}
+
+.rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  overflow: hidden;
+}
+
+/* raindrops */
+.rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  overflow: hidden;
+}
+
+/* thinner, sharper rain */
+.drop {
+  position: absolute;
+  top: -120px;
+  width: 1px;
+  height: 90px;
+  background: linear-gradient(transparent, rgba(255,255,255,0.6));
+  opacity: 0.6;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(130vh);
+  }
 }

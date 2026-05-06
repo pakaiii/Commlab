@@ -6,7 +6,9 @@ function windowWasScrolled(){
     
     let percentage = getScrollPercentage();
 
-    console.log("percentage", percentage);
+    let scrollY = window.scrollY;
+
+    console.log("percentage", percentage, "scrollY:",);
 
     if(percentage >= 0){
       console.log("time for character thought scroll");
@@ -38,16 +40,26 @@ function startColumnScroll(percentage) {
 
   if (percentage < scrollPoint) return;
 
-  columnScrollActive = true; // activate column scrolling
+  columnScrollActive = true; 
 }
 
 window.addEventListener("wheel", function(e) {
 
   if (!columnScrollActive) return;
 
-  e.preventDefault(); // lock page scroll
+  e.preventDefault(); 
 
   columnScrollAmount += e.deltaY * 0.5;
+
+  // LAUGH TRIGGER CHECK (safe, inside your system)
+if (!laughTriggered) {
+  console.log("columnScrollAmount:", columnScrollAmount);
+
+  if (columnScrollAmount >= LAUGH_TRIGGER_AMOUNT) {
+    laughTriggered = true;
+    triggerLaugh();
+  }
+}
 
   const columns = document.querySelectorAll(".column");
 
@@ -69,7 +81,6 @@ window.addEventListener("wheel", function(e) {
     content.style.transform = `translateY(-${move}px)`;
   });
 
-  // ONLY release when fully back at top AND scrolling up
   if (allAtTop && e.deltaY < 0) {
     columnScrollAmount = 0;
     columnScrollActive = false;
@@ -77,6 +88,47 @@ window.addEventListener("wheel", function(e) {
 
 }, { passive: false });
 
+
+let laughTriggered = false;
+
+// adjust this after testing
+const LAUGH_TRIGGER_AMOUNT = 4010;
+
+function triggerLaugh() {
+  const overlay = document.getElementById("laughOverlay");
+  if (!overlay) return;
+
+  overlay.style.opacity = 1;
+
+  const frames = overlay.querySelectorAll("img");
+
+  let i = 0;
+
+  frames.forEach(img => img.style.opacity = 0);
+  frames[0].style.opacity = 1;
+
+  const interval = setInterval(() => {
+    frames.forEach(img => img.style.opacity = 0);
+
+    if (frames[i]) {
+      frames[i].style.opacity = 1;
+    }
+
+    i++;
+
+    if (i >= frames.length) {
+      clearInterval(interval);
+
+      setTimeout(() => {
+        overlay.style.opacity = 0;
+      }, 200);
+    }
+  }, 50);
+}
+
+
+
+// old code i abandoned 
 
 // const columns = document.querySelectorAll(".column");
 
