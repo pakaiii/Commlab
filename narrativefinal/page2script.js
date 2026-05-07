@@ -1,18 +1,17 @@
-
 let columnScrollActive = false;
 let columnScrollAmount = 0;
 
 function windowWasScrolled(){
-    
+
     let percentage = getScrollPercentage();
 
     let scrollY = window.scrollY;
 
-    console.log("percentage", percentage, "scrollY:",);
+    console.log("percentage", percentage, "scrollY:", scrollY);
 
     if(percentage >= 0){
       console.log("time for character thought scroll");
-      
+
       startColumnScroll(percentage);
     }
 }
@@ -40,32 +39,25 @@ function startColumnScroll(percentage) {
 
   if (percentage < scrollPoint) return;
 
-  columnScrollActive = true; 
+  columnScrollActive = true;
 }
 
 window.addEventListener("wheel", function(e) {
 
   if (!columnScrollActive) return;
 
-  e.preventDefault(); 
+  e.preventDefault();
 
   columnScrollAmount += e.deltaY * 0.5;
-
-if (!laughTriggered) {
-  console.log("columnScrollAmount:", columnScrollAmount);
-
-  if (columnScrollAmount >= laughAni) {
-    laughTriggered = true;
-    triggerLaugh();
-  }
-}
 
   const columns = document.querySelectorAll(".column");
 
   let allAtTop = true;
 
   columns.forEach(function(col) {
+
     let speed = col.dataset.speed || 1;
+
     let content = col.querySelector(".columnContent");
 
     let max = content.scrollHeight - col.clientHeight;
@@ -73,56 +65,23 @@ if (!laughTriggered) {
     let move = columnScrollAmount * speed;
 
     if (move < 0) move = 0;
+
     if (move > max) move = max;
 
     if (move > 0) allAtTop = false;
 
     content.style.transform = `translateY(-${move}px)`;
+
   });
 
   if (allAtTop && e.deltaY < 0) {
+
     columnScrollAmount = 0;
+
     columnScrollActive = false;
   }
 
 }, { passive: false });
-
-
-let laughTriggered = false;
-
-const laughAni = 4010;
-
-function triggerLaugh() {
-  const overlay = document.getElementById("laughOverlay");
-  if (!overlay) return;
-
-  overlay.style.opacity = 1;
-
-  const frames = overlay.querySelectorAll("img");
-
-  let i = 0;
-
-  frames.forEach(img => img.style.opacity = 0);
-  frames[0].style.opacity = 1;
-
-  const interval = setInterval(() => {
-    frames.forEach(img => img.style.opacity = 0);
-
-    if (frames[i]) {
-      frames[i].style.opacity = 1;
-    }
-
-    i++;
-
-    if (i >= frames.length) {
-      clearInterval(interval);
-
-      setTimeout(() => {
-        overlay.style.opacity = 0;
-      }, 200);
-    }
-  }, 50);
-}
 
 
 
