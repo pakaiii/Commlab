@@ -1,6 +1,6 @@
 body{
     margin: 5px;
-    background-color: black;
+    background-color:black;
 
 }
 
@@ -45,14 +45,6 @@ h1 {
     
 }
 
-#building2{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  position: absolute;
-  display: block;
-}
-
 #intromonologue{
    color:white ;
    background-color: black;
@@ -61,7 +53,6 @@ h1 {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    
 }
-
 
 .thebubbleimg{
     width: 100%;
@@ -74,9 +65,12 @@ h1 {
 
 
 .window img {
-  position: static;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
@@ -121,7 +115,7 @@ h1 {
   left: 0;
 }
 
-@keyframes riseUp {
+/* @keyframes riseUp {
   0% {
     opacity: 0;
     transform: translateX(-50%) skewX(20deg) scaleY(0.2);
@@ -140,8 +134,9 @@ h1 {
 
 .show {
   animation: riseUp 0.8s ease forwards;
-}
+} */
 
+/* below are raindrops */
 .rain {
   position: fixed;
   top: 0;
@@ -153,7 +148,6 @@ h1 {
   overflow: hidden;
 }
 
-/* raindrops */
 .drop {
   position: absolute;
   bottom: 100%;
@@ -188,7 +182,6 @@ h1 {
   overflow: hidden;
 }
 
-/* raindrops */
 .rain {
   position: fixed;
   top: 0;
@@ -200,7 +193,6 @@ h1 {
   overflow: hidden;
 }
 
-/* thinner, sharper rain */
 .drop {
   position: absolute;
   top: -120px;

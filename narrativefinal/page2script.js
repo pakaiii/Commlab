@@ -51,11 +51,10 @@ window.addEventListener("wheel", function(e) {
 
   columnScrollAmount += e.deltaY * 0.5;
 
-  // LAUGH TRIGGER CHECK (safe, inside your system)
 if (!laughTriggered) {
   console.log("columnScrollAmount:", columnScrollAmount);
 
-  if (columnScrollAmount >= LAUGH_TRIGGER_AMOUNT) {
+  if (columnScrollAmount >= laughAni) {
     laughTriggered = true;
     triggerLaugh();
   }
@@ -91,8 +90,7 @@ if (!laughTriggered) {
 
 let laughTriggered = false;
 
-// adjust this after testing
-const LAUGH_TRIGGER_AMOUNT = 4010;
+const laughAni = 4010;
 
 function triggerLaugh() {
   const overlay = document.getElementById("laughOverlay");

@@ -4,10 +4,8 @@ const letters = document.querySelectorAll("#title span");
 window.addEventListener("scroll", function(){
 
     console.log("scroll test");
-
     const scrollTop = window.scrollY;
     const maxScroll = document.body.scrollHeight - window.innerHeight;
-
     const progress = 1 - (scrollTop / maxScroll);
 
     const lettersToFill = Math.floor(progress * letters.length);
@@ -22,6 +20,7 @@ window.addEventListener("scroll", function(){
     });
 });
 
+// yea nope.
 // const layer1 = document.getElementById("layer1");
 // const layer2 = document.getElementById("layer2");
 
@@ -44,10 +43,14 @@ window.addEventListener("scroll", function(){
 //   }
 // });
 
+window.addEventListener("load", () => {
+  window.scrollTo(0, document.body.scrollHeight);
+});
+
 const rain = document.querySelector(".rain");
 const drops = [];
 
-// create rain
+// rain
 for (let i = 0; i < 180; i++) {
   const d = document.createElement("div");
   d.className = "drop";
@@ -61,27 +64,19 @@ for (let i = 0; i < 180; i++) {
 
 window.addEventListener("scroll", () => {
   const maxScroll = document.body.scrollHeight - window.innerHeight;
-
-  // how far you've scrolled UP from bottom
   const progress = (maxScroll - window.scrollY) / maxScroll;
-
   drops.forEach(d => {
-
-    // 🔥 ONE simple condition
     if (progress > 0.95) {
-      // TOP → frozen droplets
       d.style.animationPlayState = "paused";
       d.style.width = "6px";
       d.style.height = "6px";
       d.style.borderRadius = "50%";
       d.style.background = "rgba(255,255,255,0.7)";
     } else {
-      // REST → normal rain
       d.style.animationPlayState = "running";
       d.style.width = "1px";
       d.style.height = "90px";
       d.style.borderRadius = "0";
-      d.style.background = "linear-gradient(transparent, rgba(255,255,255,0.6))";
     }
 
   });
