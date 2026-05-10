@@ -9,7 +9,10 @@ I Am Not A Goldfish is a story exploring a longing for nostalgia and navigating 
 
 ## <pre>Preview</pre>
 ![Hidden Item Game pt.1](images/Hiddenitemgame1.png)
+Preview of the hidden item game.
 
 ![Hidden Item Game pt.2](images/Hiddenitemgame2.png)
+The user must scroll down to find all the items in the item bar.
 
 ![The Goldfish Tarot Card](images/ending.png)
+The Goldfish Tarot card, rather than depicting a golfish freely swimming, depicts goldfish trapped within plastic bags. This is to symbolize how the bubble acts as a container that limits and traps the character. 
